@@ -1,11 +1,58 @@
-# Readme File_All about Happy Customers Project
 
-Summary
 
-This project deepened my machine learning knowledge significantly and I strengthened my ability to apply concepts that I learned from textbooks, blogs and various other sources, on a different type of problem. This project had a heavy focus on the data preparation part, since this is what data scientists work on most of their time.
+---
 
-I started with the data exploration where I got a feeling for the dataset, checked about missing data and learned which features are important. During this process I used seaborn and matplotlib to do the visualizations. During the data preprocessing part, I computed missing values, there's no missing values in the data set.
+# Machine Learning Model Evaluation
 
-Afterwards I started training 6 different machine learning models. The best accuracy result is from KNN Algorithm 76.9%. I picked one of them (random forest) and applied hyper parameter tuning, scaling and cross validation on it. Then I explained how random forest works, took a look at the importance it assigns to the different features and tuned it's performace through optimizing it's hyperparameter values. The accuracy is improving after applying hyper parameter tuning, scaling and cross validation techniques. Lastly I took a look at it's confusion matrix and computed the models precision, recall and f-score, before submitting my predictions on the test-set.
+This repository contains a collection of machine learning models and their respective performance evaluations on a specific dataset. Each model is trained and tested on the dataset, and their accuracy scores are reported for reference.
 
-Finally, I am getting best accuracy from KNN Algorithm compared to all other 5 algorithms.
+## Models and Their Performance
+
+### 1. Stochastic Gradient Descent (SGD)
+- Accuracy Score: 57.69%
+
+The Stochastic Gradient Descent model achieved an accuracy score of 57.69%. This score reflects the model's ability to make correct predictions on the given dataset.
+
+### 2. Linear Support Vector Classifier (SVC)
+- Accuracy Score: 50.0%
+
+The Linear Support Vector Classifier yielded an accuracy score of 50.0%. This score measures the model's classification accuracy on the dataset.
+
+### 3. SVC Parameter Tuning with GridSearch
+- Accuracy: 53.85%
+
+By applying hyperparameter tuning with GridSearch, the Support Vector Classifier improved its accuracy to 53.85%. This demonstrates the impact of hyperparameter optimization on model performance.
+
+### 4. K-Nearest Neighbors (KNN)
+- Accuracy: 76.9%
+
+The K-Nearest Neighbors model achieved a notable accuracy score of 76.9%. This high accuracy suggests that KNN is well-suited for the given dataset.
+
+### 5. Decision Tree
+- Accuracy: 53.85%
+
+The Decision Tree model achieved an accuracy score of 53.85%. This score reflects the model's performance in making decisions based on the dataset's features.
+
+### 6. Logistic Regression
+- Accuracy: 62.0%
+
+Logistic Regression achieved an accuracy score of 62.0%. This logistic regression model is suitable for binary classification tasks and performed well on this dataset.
+
+### 7. Random Forest
+- Accuracy Score: 73.6%
+
+The Random Forest model achieved an accuracy score of 73.6%. Random Forest is an ensemble model, and its high accuracy reflects its ability to combine multiple decision trees effectively.
+
+### Hyperparameter Tuning and Model Details
+
+In addition to presenting model accuracy scores, this repository includes information about hyperparameter tuning and model details:
+
+- **Hyperparameter tuning using RandomizedSearch CV:** The Random Forest model was fine-tuned using RandomizedSearch Cross-Validation to optimize its hyperparameters.
+
+- **Hyperparameter Tuning - GridSearchCV:** The Support Vector Classifier was enhanced through GridSearchCV, allowing us to find the best combination of hyperparameters for improved performance.
+
+- **Random Forest Classifier model with default parameters:** The initial performance of the Random Forest model using default parameters is provided for reference.
+
+- **Feature Scaling:** Note that feature scaling techniques were applied to ensure that the input features were properly scaled before model training.
+
+---
